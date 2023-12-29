@@ -1,0 +1,45 @@
+﻿@model IntegraBrasilApi.Models.EnderecoModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detalhes do Endereço</title>
+</head>
+<body>
+    <h2>Detalhes do Endereço</h2>
+
+    @if (Model != null)
+    {
+        <table>
+            <tr>
+                <td>Cep:</td>
+                <td>@Model.Cep</td>
+            </tr>
+            <tr>
+                <td>Estado:</td>
+                <td>@Model.Estado</td>
+            </tr>
+            <tr>
+                <td>Cidade:</td>
+                <td>@Model.Cidade</td>
+            </tr>
+            <tr>
+                <td>Região:</td>
+                <td>@Model.Regiao</td>
+            </tr>
+            <tr>
+                <td>Rua:</td>
+                <td>@Model.Rua</td>
+            </tr>
+            <tr>
+                <td>Serviço:</td>
+                <td>@Model.Servico</td>
+            </tr>
+        </table>
+    }
+    else
+    {
+        <p>Nenhum dado de endereço disponível.</p>
+    }
+</body>
+</html>
